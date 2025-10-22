@@ -15,6 +15,9 @@ This tool has been used internally at TrustedSec since January 2021 and was publ
 
 **The releases are precompiled into a single application-dependent binary. The size go up, but you do not need NET or any other dependencies to run them.**
 
+## Fork Changes
+The AWS Fireprox functionality has been removed from the spray and enumeration modules. Instead, the tool can route all traffic through the proxy defined in your configuration file. The proxy is automatically used for spraying and enumeration. If you want to use the proxy for exfiltration, you must enable the --debug flag.
+
 ## Usage
 
 ```
